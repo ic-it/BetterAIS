@@ -1,0 +1,119 @@
+
+
+body
+{
+    background: rgb(2,0,36) !important;
+    background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(121,9,73,1) 37%, rgba(0,212,255,1) 100%) !important;
+    background: linear-gradient(to top, rgba(153,0,137,1) 0%, rgba(7,3,144,1) 100%) !important;
+    background: linear-gradient(to top, rgba(0,62,147,1) 0%, rgba(153,0,39,1) 100%) !important;
+
+
+    backdrop-filter: blur(100px) !important;
+    color: red !important;
+}
+
+div#hlavicka
+{
+    margin: 10px !important;
+    border-radius: 30px !important;
+    color: rgba(217,0,44,1) !important;
+    background: radial-gradient(circle, rgba(140,0,0,1) 0%, rgba(52,0,0,1) 100%) !important;
+    border: 1px solid #fff !important;
+}
+
+div#svatek{
+    padding-right: 50px !important;
+}
+
+div#vlajky {
+    padding-right: 20px !important;
+}
+
+.uisFixedBox {
+    color: black !important;
+}
+
+.mainpage {
+    background: rgb(0, 0, 0, .6) !important;
+    border-radius: 20px !important;
+    margin-top: 10px !important;
+    padding: 10px !important;
+}
+
+#titulek {
+    margin-left: 10px !important;
+    padding-top: 10px !important;
+    width: 40% !important;
+    color: #e7ebed !important;
+}
+
+h1 {
+    background: rgb(0, 0, 0, .0) !important;
+    border-radius: 100px !important;
+    color: #e7ebed !important;
+    border: 2px solid #b94343 !important;
+}
+
+span.small  {
+    color: white !important;
+    margin: 10px !important;
+}
+
+.uisseparator {
+    display: none !important;
+}
+
+.polozky-obal {
+    background: rgb(0, 0, 0, .0) !important;
+    border-radius: 10px !important;
+}
+
+.zasadky-info {
+    background: rgb(153 140 0 / 32%) !important;
+    border: 5px solid #998c00 !important;
+    border-radius: 10px !important;
+}
+
+.zasadky-crit {
+    background: rgb(133 0 0 / 32%) !important;
+    border: 5px solid #850000 !important;
+    border-radius: 10px !important;
+}
+
+.portal_menu td:not(.active):not(.portal_menu_hole) {
+    background: rgb(0,0,0,0) !important;
+}
+
+a {
+    color: rgb(256, 256, 256) !important;
+}
+
+div.ramecek-nahore {
+    display: none !important;
+}
+
+div.ramecek-nahore-1{
+    display: none !important;
+}
+div.ramecek-nahore-2{
+    display: none !important;
+}
+
+div.ramecek-dole{
+    display: none !important;
+}
+
+div.ramecek-boky {
+    padding: 20px !important;
+    background: rgb(0, 0, 0, .0) !important;
+    border: 1px solid #fff !important;
+    border-radius: 10px !important;
+}
+
+div.sekce-drive{
+    background: rgb(0, 0, 0, .0) !important;
+    margin-left: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+
