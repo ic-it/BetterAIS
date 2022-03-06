@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "AIS Themes",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Changes styles in AIS",
 
     "browser_action": {
@@ -13,19 +13,27 @@
         }
     },
 
+    
     "web_accessible_resources": [
-          "css/style.css"
+        "css/neon.css"
     ],
-
     "content_scripts": [
         {
-          "matches": ["https://is.stuba.sk/*"],
-          "css" : ["css/style.css"],
-          "run_at" :"document_end"
+            "matches": ["https://is.stuba.sk/*"],
+            "js": ["js/loader.js"],
+            "run_at": "document_start"
         }
     ],
     
+    "background": {
+		"scripts": ["js/background.js"],
+		"persistent": false
+	},
+
     "permissions": [
-        "tabs"
+        "tabs",
+        "storage",
+		"activeTab",
+        "unlimitedStorage"
     ]
 }
