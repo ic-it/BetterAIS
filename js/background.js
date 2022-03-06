@@ -1,5 +1,5 @@
 var defaultThemes = {
-    "Neon": ["url", "chrome-extension://ohjopohbgabgilbajjjlgnpkbcgnjflb/css/neon.css"],
+    "Neon": ["url", `chrome-extension://${chrome.runtime.id}/css/neon.css`],
     "AIS Default": ["text", ""]
 }
 
