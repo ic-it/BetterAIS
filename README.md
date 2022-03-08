@@ -1,4 +1,4 @@
-# AISThemes
+# BetterAIS
 Ais themes Extension
 
 # Project idea:
