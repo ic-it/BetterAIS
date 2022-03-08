@@ -1,22 +1,26 @@
 {
     "manifest_version": 2,
-    "name": "AIS Themes",
+    "name": "BetterAIS",
     "version": "0.0.2",
     "description": "Changes styles in AIS",
+    "icons": {
+        "15": "icons/icon.png",
+        "32": "icons/icon.png",
+        "64": "icons/icon.png",
+        "48": "icons/icon.png",
+        "128": "icons/icon.png"
+    },
 
     "browser_action": {
         "default_popup": "html/popup.html",
-        "default_icon": {
-            "16": "icons/icon.png",
-            "24": "icons/icon.png",
-            "32": "icons/icon.png"
-        }
+        "default_icon": "icons/icon.png"
     },
 
     
     "web_accessible_resources": [
         "css/neon.css"
     ],
+    
     "content_scripts": [
         {
             "matches": ["https://is.stuba.sk/*"],
