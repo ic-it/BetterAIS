@@ -1,6 +1,6 @@
 
 // Load all themes to select
-chrome.storage.sync.get(null, function(storage) {
+chrome.storage.local.get(null, function(storage) {
     // Selected first
     var node = document.createElement("option");
     node.value = storage.selected;
@@ -20,15 +20,20 @@ chrome.storage.sync.get(null, function(storage) {
 
 
 // Set selected data
-document.getElementById("apply").onclick = function(){ chrome.storage.sync.set({"selected": document.getElementById("select").value}) };
+document.getElementById("apply").onclick = function(){ chrome.storage.local.set({"selected": document.getElementById("select").value}) };
 
 
 document.getElementById("defaultStyles").onclick = function(){ 
 
     var defaultThemes = {
         "Neon": ["url", `chrome-extension://${chrome.runtime.id}/css/neon.css`],
+        "Dark": ["url", `chrome-extension://${chrome.runtime.id}/css/dark.css`],
+        "Incognito": ["url", `chrome-extension://${chrome.runtime.id}/css/incognito.css`],
         "AIS Default": ["text", ""]
     }
+
+    // console.log(chrome.storage.local);
+    
 
     var themes = {};
     for (let themeName of Object.keys(defaultThemes))
@@ -52,7 +57,12 @@ document.getElementById("defaultStyles").onclick = function(){
     var checkerInterval = setInterval(() => {
         if (Object.keys(themes).length == Object.keys(defaultThemes).length)
         {
-            chrome.storage.sync.set({"themes": themes, "selected": "Neon"});
+            
+            chrome.storage.local.set({themes: themes, selected: "Neon"}, function() {
+                chrome.storage.local.get(null, function(storage) {
+                    console.log(storage);
+                });
+            });
             clearInterval(checkerInterval);
         }
     }, 1);

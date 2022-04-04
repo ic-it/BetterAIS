@@ -18,26 +18,41 @@
 
     
     "web_accessible_resources": [
-        "css/neon.css"
+        "css/neon.css",
+        "css/dark.css",
+        "css/incognito.css",
+        "css/bootstrap.min.css",
+        "js/jquery-1.10.2.min.js",
+        "js/bootstrap.bundle.min.js"
     ],
     
+
     "content_scripts": [
         {
             "matches": ["https://is.stuba.sk/*"],
             "js": ["js/loader.js"],
             "run_at": "document_start"
+        },
+        {
+            "matches": ["https://*/*"],
+            "js":["js/jquery-1.11.0.min.js"],
+            "run_at": "document_end"
         }
     ],
+    
     
     "background": {
 		"scripts": ["js/background.js"],
 		"persistent": false
 	},
 
+    "options_page": "html/options.html",
+
     "permissions": [
+        "storage",
+        "unlimitedStorage",
         "tabs",
         "storage",
-		"activeTab",
-        "unlimitedStorage"
+		"activeTab"
     ]
 }

@@ -1,8 +1,9 @@
 var defaultThemes = {
     "Neon": ["url", `chrome-extension://${chrome.runtime.id}/css/neon.css`],
+    "Dark": ["url", `chrome-extension://${chrome.runtime.id}/css/dark.css`],
+    "Incognito": ["url", `chrome-extension://${chrome.runtime.id}/css/incognito.css`],
     "AIS Default": ["text", ""]
 }
-
 
 chrome.runtime.onInstalled.addListener(function(details)
 {
