@@ -1,8 +1,13 @@
 chrome.storage.local.get(null, function(storage) {
-    var node = document.createElement("style");
-    node.id = "BetterAIS";
-    node.innerHTML = storage.themes[storage.selected];
-    document.head.appendChild(node);
+    var styleNode = document.createElement("style");
+    styleNode.id = "BetterAIS";
+    styleNode.innerHTML = storage.themes[storage.selected];
+    document.head.appendChild(styleNode);
+
+
+    // var scriptNode = document.createElement("script");
+    // scriptNode.setAttribute("src", `chrome-extension://${chrome.runtime.id}/js/script.js`);
+    // document.body.appendChild(scriptNode);
 });
 
 

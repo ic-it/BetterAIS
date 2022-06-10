@@ -1,0 +1,141 @@
+body {
+    /*background: rgb(2,0,36) !important;*/
+    /*background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(121,9,73,1) 37%, rgba(0,212,255,1) 100%) !important;*/
+    /*background: linear-gradient(to top, rgba(153,0,137,1) 0%, rgba(7,3,144,1) 100%) !important;*/
+    /*background: linear-gradient(to top, rgba(0,62,147,1) 0%, rgba(153,0,39,1) 100%) !important;*/
+    background: #3B4252 !important;
+
+
+    backdrop-filter: blur(100px) !important;
+    color: #D8DEE9 !important;
+}
+
+div#hlavicka {
+    margin: 10px !important;
+    border-radius: 30px !important;
+    background: #4C566A !important;
+    border: 1px solid #4C566A !important;
+}
+
+#hlavicka {
+    color: #D8DEE9 !important;
+}
+
+
+div#svatek{
+    padding-right: 50px !important;
+}
+
+div#vlajky {
+    padding-right: 20px !important;
+}
+
+
+.uisFixedBox {
+    color: black !important;
+}
+
+.mainpage {
+    background: #434C5E !important;
+    border-radius: 20px !important;
+    margin-top: 10px !important;
+    padding: 10px !important;
+}
+
+#titulek {
+    margin-left: 10px !important;
+    padding-top: 10px !important;
+    width: 40% !important;
+    /*color: #B48EAD !important;*/
+}
+
+#titulek h1 {
+    background: rgb(0, 0, 0, .0) !important;
+    border-radius: 100px !important;
+    color: #D8DEE9 !important;
+    border: 2px solid #B48EAD !important;
+}
+
+span.small  {
+    color: white !important;
+    margin: 10px !important;
+}
+
+.uisseparator {
+    display: none !important;
+}
+
+.polozky-obal {
+    background: rgb(0, 0, 0, .0) !important;
+    border-radius: 10px !important;
+}
+
+.zasadky-info {
+    background: rgb(163 190 140 / 32%) !important;
+    border: 5px solid #A3BE8C !important;
+    border-radius: 10px !important;
+    color: #D8DEE9 !important;
+}
+
+.zasadky-crit {
+    background: rgb(191 97 106 / 32%) !important;
+    border: 5px solid #BF616A !important;
+    border-radius: 10px !important;
+}
+
+.portal_menu td:not(.active):not(.portal_menu_hole) {
+    background: rgb(0,0,0,0) !important;
+}
+
+a {
+    color: rgb(256, 256, 256) !important;
+}
+
+div.ramecek-nahore {
+    display: none !important;
+}
+
+div.ramecek-nahore-1{
+    display: none !important;
+}
+div.ramecek-nahore-2{
+    display: none !important;
+}
+
+div.ramecek-dole{
+    display: none !important;
+}
+
+div.ramecek-boky {
+    padding: 20px !important;
+    background: rgb(0, 0, 0, .0) !important;
+    border: 1px solid #fff !important;
+    border-radius: 10px !important;
+}
+
+div.sekce-drive{
+    background: rgb(0, 0, 0, .0) !important;
+    margin-left: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+
+.zahlavi {
+    background-color: rgb(0, 0, 0, .0) !important;
+    color: #ff8300 !important;
+    border: 1px solid #fff !important;
+    box-shadow: none !important;
+}
+
+.sudy {
+    background-color: #df00004a !important;
+}
+
+button, [type=submit], [type=reset], [type=button], input[type=file].pseudofile + label {
+    background-color: #ffffff00 !important;
+    color: #fff !important;
+}
+
+textarea, input:not([type=image]):not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=reset]), select, optgroup {
+    box-shadow:none !important;
+}

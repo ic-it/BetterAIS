@@ -26,6 +26,7 @@ document.getElementById("apply").onclick = function(){ chrome.storage.local.set(
 document.getElementById("defaultStyles").onclick = function(){ 
 
     var defaultThemes = {
+        "Nord": ["url", `chrome-extension://${chrome.runtime.id}/css/nord.css`],
         "Neon": ["url", `chrome-extension://${chrome.runtime.id}/css/neon.css`],
         "Dark": ["url", `chrome-extension://${chrome.runtime.id}/css/dark.css`],
         "Incognito": ["url", `chrome-extension://${chrome.runtime.id}/css/incognito.css`],

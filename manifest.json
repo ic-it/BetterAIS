@@ -18,12 +18,16 @@
 
     
     "web_accessible_resources": [
+        "css/nord.css",
         "css/neon.css",
         "css/dark.css",
         "css/incognito.css",
         "css/bootstrap.min.css",
         "js/jquery-1.10.2.min.js",
-        "js/bootstrap.bundle.min.js"
+        "js/bootstrap.bundle.min.js",
+        "js/script.js",
+        
+        "icons/dekorace_crit.png"
     ],
     
 
@@ -34,7 +38,12 @@
             "run_at": "document_start"
         },
         {
-            "matches": ["https://*/*"],
+            "matches": ["https://is.stuba.sk/*"],
+            "js": ["js/script.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["https://is.stuba.sk/*"],
             "js":["js/jquery-1.11.0.min.js"],
             "run_at": "document_end"
         }

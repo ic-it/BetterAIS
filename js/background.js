@@ -1,4 +1,5 @@
 var defaultThemes = {
+    "Nord": ["url", `chrome-extension://${chrome.runtime.id}/css/nord.css`],
     "Neon": ["url", `chrome-extension://${chrome.runtime.id}/css/neon.css`],
     "Dark": ["url", `chrome-extension://${chrome.runtime.id}/css/dark.css`],
     "Incognito": ["url", `chrome-extension://${chrome.runtime.id}/css/incognito.css`],
@@ -7,7 +8,7 @@ var defaultThemes = {
 
 chrome.runtime.onInstalled.addListener(function(details)
 {
-	if (details.reason == "install") 
+	if (details.reason == "install")
     {
         var themes = {};
         for (let themeName of Object.keys(defaultThemes))
@@ -31,7 +32,7 @@ chrome.runtime.onInstalled.addListener(function(details)
         var checkerInterval = setInterval(() => {
             if (Object.keys(themes).length == Object.keys(defaultThemes).length)
             {
-                chrome.storage.sync.set({"themes": themes, "selected": "Neon"});
+                chrome.storage.sync.set({"themes": themes, "selected": "Nord"});
                 clearInterval(checkerInterval);
             }
         }, 1);
