@@ -1,19 +1,13 @@
-
-
-body
-{
+body {
     background: rgb(2,0,36) !important;
     background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(121,9,73,1) 37%, rgba(0,212,255,1) 100%) !important;
     background: linear-gradient(to top, rgba(153,0,137,1) 0%, rgba(7,3,144,1) 100%) !important;
     background: linear-gradient(to top, rgba(0,62,147,1) 0%, rgba(153,0,39,1) 100%) !important;
-
-
     backdrop-filter: blur(100px) !important;
     color: red !important;
 }
 
-div#hlavicka
-{
+div#hlavicka {
     margin: 10px !important;
     border-radius: 30px !important;
     color: rgba(217,0,44,1) !important;
@@ -21,7 +15,7 @@ div#hlavicka
     border: 1px solid #fff !important;
 }
 
-div#svatek{
+div#svatek {
     padding-right: 50px !important;
 }
 
@@ -54,7 +48,7 @@ h1 {
     border: 2px solid #b94343 !important;
 }
 
-span.small  {
+span.small {
     color: white !important;
     margin: 10px !important;
 }
@@ -92,14 +86,14 @@ div.ramecek-nahore {
     display: none !important;
 }
 
-div.ramecek-nahore-1{
+div.ramecek-nahore-1 {
     display: none !important;
 }
-div.ramecek-nahore-2{
+div.ramecek-nahore-2 {
     display: none !important;
 }
 
-div.ramecek-dole{
+div.ramecek-dole {
     display: none !important;
 }
 
@@ -110,10 +104,8 @@ div.ramecek-boky {
     border-radius: 10px !important;
 }
 
-div.sekce-drive{
+div.sekce-drive {
     background: rgb(0, 0, 0, .0) !important;
     margin-left: 10px !important;
     margin-bottom: 10px !important;
 }
-
-

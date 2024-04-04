@@ -1,11 +1,5 @@
 body {
-    /*background: rgb(2,0,36) !important;*/
-    /*background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(121,9,73,1) 37%, rgba(0,212,255,1) 100%) !important;*/
-    /*background: linear-gradient(to top, rgba(153,0,137,1) 0%, rgba(7,3,144,1) 100%) !important;*/
-    /*background: linear-gradient(to top, rgba(0,62,147,1) 0%, rgba(153,0,39,1) 100%) !important;*/
     background: #3B4252 !important;
-
-
     backdrop-filter: blur(100px) !important;
     color: #D8DEE9 !important;
 }
@@ -46,7 +40,6 @@ div#vlajky {
     margin-left: 10px !important;
     padding-top: 10px !important;
     width: 40% !important;
-    /*color: #B48EAD !important;*/
 }
 
 #titulek h1 {
@@ -118,7 +111,6 @@ div.sekce-drive{
     margin-left: 10px !important;
     margin-bottom: 10px !important;
 }
-
 
 .zahlavi {
     background-color: rgb(0, 0, 0, .0) !important;
