@@ -3,8 +3,6 @@ body {
     background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(121,9,73,1) 37%, rgba(0,212,255,1) 100%) !important;
     background: linear-gradient(to top, rgba(153,0,137,1) 0%, rgba(7,3,144,1) 100%) !important;
     background: linear-gradient(to top, rgba(0,62,147,1) 0%, rgba(153,0,39,1) 100%) !important;
-
-
     backdrop-filter: blur(100px) !important;
     color: red !important;
 }

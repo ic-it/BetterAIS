@@ -1,40 +1,24 @@
-var defaultThemes = {
-    "Nord": ["url", `chrome-extension://${chrome.runtime.id}/css/nord.css`],
-    "Neon": ["url", `chrome-extension://${chrome.runtime.id}/css/neon.css`],
-    "Dark": ["url", `chrome-extension://${chrome.runtime.id}/css/dark.css`],
-    "Incognito": ["url", `chrome-extension://${chrome.runtime.id}/css/incognito.css`],
-    "AIS Default": ["text", ""]
+const defaultThemes = {
+  "Nord": { type: "url", value: `chrome-extension://${chrome.runtime.id}/min/nord.min.css` },
+  "Neon": { type: "url", value: `chrome-extension://${chrome.runtime.id}/min/neon.min.css` },
+  "Dark": { type: "url", value: `chrome-extension://${chrome.runtime.id}/min/dark.min.css` },
+  "Incognito": { type: "url", value: `chrome-extension://${chrome.runtime.id}/min/incognito.min.css` },
+  "AIS Default": { type: "text", value: "" }
 }
 
-chrome.runtime.onInstalled.addListener(function(details)
-{
-	if (details.reason == "install")
-    {
-        var themes = {};
-        for (let themeName of Object.keys(defaultThemes))
-        {
-            if (defaultThemes[themeName][0] == "url")
-            {
-                fetch(defaultThemes[themeName][1])
-                .then((resp) => {
-                        return resp.text()
-                    })
-                .then((data) => {
-                    themes[themeName] = data;
-                })
-            }
-            if (defaultThemes[themeName][0] == "text")
-            {
-                themes[themeName] = defaultThemes[themeName][1];
-            }
+chrome.runtime.onInstalled.addListener(async (details) => {
+  if (details.reason === "install") {
+    const themes = await Promise.all(
+      Object.entries(defaultThemes).map(async ([themeName, {type, value}]) => {
+        let themeContent = value;
+        if (type === "url") {
+          const resp = await fetch(value);
+          themeContent = await resp.text();
         }
+        return [themeName, themeContent];
+      })
+    ).then(entries => Object.fromEntries(entries));
 
-        var checkerInterval = setInterval(() => {
-            if (Object.keys(themes).length == Object.keys(defaultThemes).length)
-            {
-                chrome.storage.sync.set({"themes": themes, "selected": "Nord"});
-                clearInterval(checkerInterval);
-            }
-        }, 1);
-	}
+    chrome.storage.local.set({ "themes": themes, "selected": "Nord" });
+  }
 });

@@ -1,0 +1,437 @@
+body {
+	color: #bfbfbf;
+    background: #FFF;
+    background-color: #232323;
+    margin: auto;
+}
+
+a {
+    color: #2F8C75;
+}
+
+a:hover {
+    color: #CCC;
+    text-decoration: none;
+    text-shadow: 0px 0px 15px rgba(47, 140, 117, 1);
+    transition: all 0.25s ease-out;
+}
+
+input:focus {
+    outline: 0 !important;
+}
+
+#hlavicka {
+    background-color: #171717;
+}
+
+#hlavicka #svatek {
+    color: #CCC;
+}
+
+#hlavicka #univerzita {
+    color: #CCC;
+}
+
+#hlavicka #menu {
+    color: #CCC;
+}
+
+#hlavicka #menu a {
+    color: #2F8C75;
+}
+
+#hlavicka #menu a:hover {
+    color: #CCC;
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+}
+
+h1 {
+    filter: hue-rotate(198deg);
+    background-color: #171717;
+    border-color: #000;
+    border-radius: 4px;
+    color: #CCC;
+}
+
+table {
+    background-color: transparent !important;
+}
+
+.zasadky-info, .zasadky-crit{
+    background: #171717 !important;
+    color: #CCC;
+}
+
+.zasadky-info:hover {
+    background: #151515;
+    border-color: #3dcbff;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(61, 203, 255, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(61, 203, 255, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(61, 203, 255, 0.3);
+    transition: all 0.5s ease-out;
+}
+
+.zasadky-crit:hover {
+    background: #151515;
+    border-color: #ff3d64;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(255, 61, 100, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(255, 61, 100, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(255, 61, 100, 0.3);
+    transition: all 0.5s ease-out;
+}
+
+.polozky-obal {
+    background-color: #171717;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.polozky-obal:hover {
+    background: #151515;
+    border-color: #2F8C75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    transition: all 0.5s ease-out;
+}
+
+.ramecek-nahore {
+    opacity: 0;
+}
+
+.ramecek-boky {
+    background: none !important;
+    border: none !important;
+    padding-top: 10px;
+}
+
+.ramecek-boky .sekce-nadpis .menusectionsetup img, .ramecek-boky .menusectionclose img {
+	filter: hue-rotate(120deg);
+}
+
+.ramecek-dole, .ramecek-dole-3, .ramecek-dole-4 {
+    background: none !important;
+}
+
+.portal_menu td:not(.active):not(.portal_menu_hole) {
+    background: #171717;
+    border: 1px solid #000;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.portal_menu td:not(.active):not(.portal_menu_hole):hover {
+    background: #151515;
+    border-top-color: #2F8C75;
+    border-right-color: #2F8C75;
+    border-left-color: #2F8C75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    transition: all 0.5s ease-out;
+}
+
+.portal_menu td.portal_menu_hole {
+    border-bottom: 1px solid #000;
+}
+
+.portal_menu td:not(.portal_menu_hole).active {
+    border-color: #2F8C75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+}
+
+tr.zahlavi > th, tr.zahlavi > td, tr.zahlavi > th.zahlavi, tr.zahlavi > td.zahlavi, th.zahlavi, td.zahlavi {
+    color: #2F8C75;
+    background-color: #171717;
+}
+
+tr.zahlavi > th, tr.zahlavi > td, tr.zahlavi > th.zahlavi, tr.zahlavi > td.zahlavi, th.zahlavi, td.zahlavi {
+    border-radius: 4px;
+    border-color: #000 !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+}
+
+tr.sudy:not(.zahlavi) {
+    background-color: #151515;
+}
+
+.uis-hl-table:hover {
+    background-color: #151515 !important;
+}
+
+.loginform, #loginform {
+    background-color: #171717;
+    border: 1px solid #000;
+    box-shadow: none;
+    color: #ccc;
+}
+
+.loginform, #loginform:hover {
+    background: #151515;
+    border-color: #2F8C75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    transition: all 0.5s ease-out;
+}
+
+big {
+    color: #3dcbff;
+}
+
+input[type="text"], input[type="password"], textarea {
+    box-shadow: none !important;
+    background: #151515 !important;
+    border: 1px solid #CCC !important;
+    border-radius: 4px !important;
+    color: #2F8C75 !important;
+}
+
+input[type="text"]:hover, input[type="password"]:hover, textarea:hover {
+    border-color: #2F8C75 !important;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    transition: all 0.5s ease-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #2F8C75 !important;
+    color: #CCC;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    transition: all 0.5s ease-out;
+}
+
+input[type="submit"], input[type="button"], input[type="file"], #uis-context-help-reader button {
+    background-color: transparent;
+    color: #CCC;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, #uis-context-help-reader button:hover {
+    color: #ccc;
+    border: 1px solid #ccc !important;
+    background-color: rgba(47, 140, 117, 0.5);
+    transition: all 0.5s ease-out;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	background-color: #696969 !important;
+    border-radius: 3px !important;
+}
+
+input[type="checkbox"]:focus, input[type="radio"]:focus {
+    box-shadow: none !important;
+    border-color: #2F8C75 !important;
+}
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+	border-color: #000;
+    background-color: #2F8C75 !important;
+    transition: all 0.5s ease-out;
+}
+
+select {
+    background-color: #151515;
+    box-shadow: none !important;
+    color: #ccc;
+}
+
+select:hover {
+    border-color: #2F8C75 !important;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+	transition: all 0.5s ease-out;
+}
+
+option:checked {
+    background-color: rgba(47, 140, 117, 0.5);
+    color: #ccc;
+}
+
+::selection {
+    background: rgba(47, 140, 117, 1);
+    color: #CCC;
+}
+
+div.jstm-toolbox-inside {
+	background: #171717 !important;
+    border: 1px solid #000;
+    box-shadow: none;
+    border-radius: 4px !important;
+
+}
+
+div.jstm-toolbox a:hover {
+	background-color: #2F8C75 !important;
+    border-radius: 2px !important;
+}
+
+#uisFixedBox .obsah {
+	background-color: #171717;
+    border: 1px solid #2F8C75;
+	-webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    transition: all 0.5s ease-out;
+}
+
+.rozvrh-pred {
+    color: #ccc;
+	background-color: rgba(47, 140, 117, 0.5);
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.rozvrh-cvic {
+    color: #ccc;
+	background-color: rgba(61, 203, 255, 0.5);
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.rozvrh-blok a, .rozvrh-reze a, .rozvrh-pred a, .rozvrh-cvic a, .rozvrh-volno a, .rozvrh-zadost a {
+	color: #CCC;
+}
+
+.ui-datepicker {
+    background-color: #171717;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #2F8C75;
+	background: #171717 !important;
+    color: #2F8C75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    transition: all 0.5s ease-out;
+}
+
+.ui-datepicker table {
+	background-color: #171717 !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	color: #ccc;
+    background: #171717 !important;
+    border-color: #ccc;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+	border: 1px solid #2F8C75;
+    border-radius: 2px;
+    background: none;
+    color: #2f8c75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    transition: all 0.5s ease-out;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	color: #CCC;
+    background: none;
+    border-radius: 2px;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    color: #2f8c75;
+	border: 1px solid #2F8C75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    transition: all 0.5s ease-out;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	border: 1px solid #2F8C75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3) !important;
+    transition: all 0.5s ease-out;
+}
+
+.reqfields, input[type=file].pseudofile.reqfields + label {
+    background-color: #171717;
+    border-color: #ccc !important;
+}
+
+td div.small, td span.small, td .small28, td .small415, td .xsmall28, td .xsmall415, td .ysmall, td .xsmall, td .ysmall28, td .ysmall415 {
+    color: #bfbfbf;
+}
+
+.bunka_seda {
+    background-color: #171717;
+    border: 1px solid #CCC;
+}
+
+.bunka_seda:hover {
+    background: #151515;
+    border-color: #2F8C75;
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(47, 140, 117, 0.3);
+    transition: all 0.5s ease-out;
+}
+
+#uis-context-help-titlebar, #uis-quicksave-titlebar {
+	border-radius: 4px;
+    border: 0;
+    background: #171717 !important;
+}
+
+#uis-context-help-freezebtn, #uis-context-help-minimizebtn, #uis-context-help-enlargebtn, #uis-context-help-resetbtn, #uis-context-help-closebtn {
+	filter: invert(100%);
+}
+
+#uis-context-help-reader, #uis-context-help-reader .documentation {
+	background-color: #171717;
+    border: 0;
+}
+
+#uis-context-help-footerbar {
+	background-color: #202020;
+}
+
+#uis-context-help-reader .note, .help .note {
+	color: #ccc;
+	background-color: rgba(61, 203, 255, 0.5);
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(61, 203, 255, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(61, 203, 255, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(61, 203, 255, 0.3);
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+#uis-context-help-reader .hint, .help .hint {
+	color: #ccc;
+	background-color: rgba(255, 61, 100, 0.5);
+    -webkit-box-shadow: 0px 1px 69px -15px rgba(255, 61, 100, 0.3);
+    -moz-box-shadow: 0px 1px 69px -15px rgba(255, 61, 100, 0.3);
+    box-shadow: 0px 1px 69px -15px rgba(255, 61, 100, 0.3);
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+#uis-context-help-reader .icon-inline, .help .icon-inline {
+	filter: hue-rotate(120deg);
+}
+
+.odsazena b {
+/* 	color: #2F8C75; */
+}
+
+.odsazena span {
+	filter: contrast(60%);
+/*     filter: saturate(90%); */
+    font-weight: 700;
+}
+
+.radek-vyrazny {
+    background-color: #2d3c38;
+}

@@ -51,8 +51,6 @@ h1.title {
   color: #265380;
 }
 
-
-
 .apply {
   background-color: var(--darkgray);
   border-radius: 4px;
@@ -90,7 +88,6 @@ h1.title {
   opacity: .65;
 }
 
-
 /* Other styles*/
 body {
   color: #fff;
@@ -110,4 +107,16 @@ a {
 
 p {
   color: #2c3e50;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
